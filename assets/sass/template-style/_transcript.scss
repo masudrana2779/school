@@ -1,0 +1,321 @@
+.transcriptWrap {
+    position: relative;
+
+    .transcriptPrint {
+        margin-bottom: 10px;
+
+        a {
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .onlineVersion {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;h1 {
+        font-size: 120px;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke: 1px #bae7ca;
+        transform: rotate(-45deg);
+        opacity: 0.2;
+    }
+}
+}
+
+.transcriptMainBody {
+    border: 4px double $brandColor;
+
+    .transcriptTop {
+        position     : relative;
+        padding      : 20px 0 50px;
+        border-bottom: 3px solid $bgDark;
+        background   : #fff;
+
+        .logo {
+            position: absolute;
+            left    : 50px;
+            top     : 25px;
+
+            img {
+                max-width: 100px;
+                width    : 100%;
+            }
+        }
+
+        .topContent {
+            .nameOfSchool {
+                font-size    : 26px;
+                font-family  : 'Times New Roman', Times, serif;
+                font-weight  : bold;
+                margin-bottom: 10px;
+                color        : $bgDark;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .nameOfPaper {
+            position     : absolute;
+            bottom       : 0;
+            left         : 0;
+            right        : 0;
+            max-width    : 450px;
+            width        : 100%;
+            margin       : 0 auto;
+            border       : 1px solid #333;
+            padding      : 10px;
+            transform    : translateY(50%);
+            background   : $bgDark;
+            color: #fff;
+            z-index      : 1;
+            border-radius: 20px;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+
+            h4 {
+                font-family: "algerian";
+                font-size  : 18px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .transcriptPaperBody {
+        padding: 10px;
+
+        .table th[colspan="5"] {
+            text-align: center;
+        }
+
+        .table th .table {
+            margin: 0;
+        }
+
+        .table th {
+            vertical-align: middle;
+            background    : #ddd;
+            text-align    : center;
+        }
+
+        .table td:nth-child(2) {
+            text-align: left;
+            width     : 85%;
+        }
+
+        .table td:nth-child(5),
+        .table td:nth-child(6),
+        .table td:nth-child(7),
+        .table td:nth-child(8),
+        .table td:nth-child(9) {
+            width: 75px;
+        }
+
+        .table td {
+            text-align: center;
+        }
+
+        .table td,
+        .table th {
+            border   : 1px solid #cccccc;
+            font-size: 15px;
+        }
+
+        .table th .table tr th {
+            border-left  : none;
+            border-top   : none;
+            border-bottom: none;
+        }
+
+        .table th .table tr:last-child th {
+            width: 75px;
+        }
+
+        .table th .table tr:first-child th {
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .table th .table tr th:last-child {
+            border-right: none;
+        }
+
+        .tableOfNumber {
+            border-collapse: collapse;
+            font-size      : 15px;
+            width          : 100%;
+            border         : 1px solid #ccc;
+            margin-bottom  : 20px;
+
+            tr {
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    td {
+                        text-align                : center;
+                        padding                   : 6px 10px;
+                        border                    : 1px solid #cccccc;
+                        background-color          : #e8e8e8 !important;
+                        -webkit-print-color-adjust: exact;
+                        font-weight               : bolder;
+                    }
+                }
+
+                td {
+                    text-align: center;
+                    padding   : 6px 10px;
+                    border    : 1px solid #cccccc;
+
+                    &:nth-child(1) {
+                        text-align: center;
+                        padding   : 6px 6px;
+                        border    : 1px solid #cccccc;
+                    }
+
+                    &:nth-child(2) {
+                        text-align: left;
+                        padding   : 6px 10px;
+                        border    : 1px solid #cccccc;
+                    }
+
+                }
+
+                .bgLightRed {
+                    text-align                : center;
+                    background-color          : #fbedef !important;
+                    -webkit-print-color-adjust: exact;
+                    padding                   : 6px 10px;
+                    border                    : 1px solid #cccccc;
+                }
+
+                .bgGray {
+                    background-color          : #e8e8e8  !important;
+                    -webkit-print-color-adjust: exact;
+                }
+            }
+
+            .textBold {
+                font-weight: bold !important;
+                font-size  : 15px
+            }
+        }
+
+        .positionTable {
+            border-collapse: collapse;
+            font-size      : 15px;
+            width          : 100%;
+            border         : 1px solid #ccc;
+            margin-bottom  : 20px;
+
+            tr {
+                td {
+                    border     : 1px solid #cccccc;
+                    font-size  : 15px;
+                    padding    : 3px 10px;
+                    text-align : right;
+                    font-weight: bold;
+                }
+
+                &:last-child {
+                    td {
+                        padding: 20px 10px 10px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.marksTable {
+    tr {
+        transition: all 0.5s;
+
+        &:hover {
+            background: #eee;
+        }
+
+        th {
+            background-color: $bgDark;
+            border-bottom   : 1px solid #eaeaea;
+            color           : #ffffff;
+            font-size       : 15px;
+            font-weight     : 400;
+            line-height     : normal;
+            font-weight     : bolder;
+            padding         : 15px;
+            text-align      : left;
+        }
+
+        td {
+            border-bottom: 1px solid #BFBFBF;
+            font-size    : 15px;
+            line-height  : normal;
+            padding      : 13px 15px;
+            text-align   : left;
+            color        : #2c3e50;
+        }
+    }
+}
+
+.studentInfoWrap {
+    padding      : 50px 10px 30px;
+    border-bottom: 3px solid #ccc;
+
+    .studentInfoContent {
+
+        .studentPic {
+            border      : 4px groove #f7f8da;
+            padding     : 3px;
+            margin-right: 15px;
+
+            img {
+                max-width: 150px;
+                width    : 100%;
+            }
+        }
+
+        .studentInfoTable {
+            .table {
+                margin: 0;
+
+                tr {
+                    td {
+                        padding: 0 5px;
+                        border : none;
+                    }
+                }
+            }
+        }
+    }
+
+    .studentClassInfo {
+        .studentClassInfoTable {
+            .table {
+                margin: 0;
+
+                tr {
+                    td {
+                        padding    : 2px 5px;
+                        border     : 1px solid #333;
+                        font-weight: 600;
+
+                        &:nth-child(2) {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

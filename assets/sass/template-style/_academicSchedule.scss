@@ -1,0 +1,43 @@
+.academicScheduleWrap {}
+
+.academicScheduleTab {
+    border-color: $bgDark;
+    margin-bottom: 20px;
+
+    .nav-item {
+        margin: 0;
+        .nav-link {
+            font-weight: 600;
+            font-size  : 18px;
+            color: $bgDark;
+            background: #eee;
+            border-radius: 0;
+            border: none;
+
+            &:hover,
+            &:focus {
+                border-color: transparent;
+            } 
+
+            &.active {
+                color: $bgDark;
+                pointer-events: none;
+                background: $bgDark;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.academicScheduleTabContent {
+    .tab-pane {
+        .table {
+            tr {
+                td {
+                    border       : none;
+                    border-bottom: 1px solid #dee2e6;
+                }
+            }
+        }
+    }
+}

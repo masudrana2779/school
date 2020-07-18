@@ -1,0 +1,66 @@
+/*----------------------------------------------------
+@File: Default Styles
+
+/*=====================================================================
+@Template Name: SMS
+@Author: Masud Rana
+@Developed By: Masud Rana
+@Developer URL: https://www.linkedin.com/in/masudrana2779/
+@Default Styles
+/*----------------------------------------------------*/
+
+
+/*Base font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+
+//-----Color
+$tcolor     : #146D50;
+$dark       : #2c234d;
+$brandColor : #146D50;
+$bgDark     : #305392;
+$bgDarkDeep : #072a6a;
+$color1     : #24d264;
+$color2     : #743fda;
+$color3     : #146D50;
+
+
+//-----Typography
+
+
+
+
+//---- font family ----	
+
+$pop: 'Open Sans',
+sans-serif;
+
+
+//----p style----	
+
+$p-font-size  : 14px;
+$p-line-height: 24px;
+$p-font-weight: normal;
+$p-font-family: 'Open Sans',
+sans-serif;
+$p-font-color: #555;
+
+//----a style----	
+
+$a-text-decuration: none;
+$a-color          : inherit;
+
+//----a-hover style----	
+
+$a-hover-color: inherit;
+
+
+
+@mixin bG ($direc, $value1, $value2) {
+    background-image: linear-gradient($direc, $value1 10%, $value2 100%);
+}
+
+@mixin bGh ($direc, $value1, $value2, $value3) {
+    background-image: linear-gradient($direc, $value1 0%, $value2 50%, $value3 100%);
+}
