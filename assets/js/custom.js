@@ -52,7 +52,7 @@
         function successStudensSlider() {
             if ($('.successStudensSlider').length > 0) {
                 $('.successStudensSlider').slick({
-                    slidesToShow: 5,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                     speed: 1000,
                     arrows: false,
