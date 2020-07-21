@@ -6297,6 +6297,8 @@ body .ui-tooltip {
   font-size: 14px; }
   .attendance .widget .dt-sc-search-form .button.TeacherAttendance {
     background: #305392; }
+  .attendance .widget .dt-sc-search-form .button:hover {
+    opacity: 0.8; }
 
 .attendance .row {
   padding: 0 10px; }

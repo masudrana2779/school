@@ -204,6 +204,9 @@
     &.TeacherAttendance {
         background: $bgDark;
     }
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .attendance .row {
