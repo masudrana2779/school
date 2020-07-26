@@ -3,6 +3,28 @@
 
     $(document).ready(function () {
 
+        function scrollTopFixed(htOp) {
+            var windowTop = $(window).scrollTop();
+            var adDcl = "fixedMenu";
+            if (windowTop > 60) {
+                if (!(htOp.hasClass(adDcl))) {
+                    htOp.stop();
+                    htOp.addClass(adDcl);
+                }
+            }
+            else {
+                if (htOp.hasClass(adDcl)) {
+                    htOp.stop();
+                    htOp.removeClass(adDcl);
+                }
+            }
+        }
+        
+        $(window).scroll(function () {
+            var htOp = $('.header');
+            scrollTopFixed(htOp);
+        });
+
 
         function bannerSlider() {
             if ($('.bannerSlider').length > 0) {
