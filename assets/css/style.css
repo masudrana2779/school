@@ -6427,7 +6427,5 @@ body .ui-tooltip {
               display: inline-block; }
     .our_team_wrap .team_single_item:hover .item_img::before {
       opacity: 1; }
-    .our_team_wrap .team_single_item:hover .team_member_details .member_details_inner {
-      background: #f9f9f9; }
-      .our_team_wrap .team_single_item:hover .team_member_details .member_details_inner .member_social_link {
-        margin-bottom: 0; }
+    .our_team_wrap .team_single_item:hover .team_member_details .member_details_inner .member_social_link {
+      margin-bottom: 0; }
